@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>CSS_ACCORDION</title>
+</head>
+<body>
+    <section id="main-box">
+        <section id="title"><h1>FILTROS</h1></section>
+        <section id="filter-pill">
+            <div id="filter-by">
+                    <p>Filtrar por:</p><p><a id="deleteAll" href="#" >Eliminar todo</a></p>
+            </div>
+            <div id="pills-container">
+                
+            </div>
+
+        </section>
+        <section id="brand" class="list">
+            <div id="MarcaList" class="header-list">
+                <h4>Marcas</h4><h4 id="signoMarcaList" class="signo"></h4>
+            </div>
+            <div id="list-items-marca" class="list-items animate">
+                    <li><input type="checkbox" id="Raiban" value="Raiban" ><label for="Raiban">Raiban</label></li>
+                    <li><input type="checkbox" id="Chin-Chin" value="Chin-Chin" ><label for="Chin-Chin">Chin-Chin</label></li>
+                    <li><input type="checkbox" id="Oakley" value="Oakley"><label for="Oakley">Oakley</label></li>
+            </div>
+        </section>
+           
+
+        <section id="product">
+            <div id="productList" class="header-list">
+                <h4>Productos</h4><h4 id="signoProductList" class="signo"></h4>
+            </div>
+            <div id="list-items-productos" class="list-items animate">
+                <li><input type="checkbox" id="Recambios" value="Recambios"><label for="Recambios">Recambios</label></li>
+                <li><input type="checkbox" id="Fundas" value="Fundas"><label for="Fundas">Fundas</label></li>
+            </div>  
+        </section>
+
+
+        <button type="submit">Aplicar Filtros</button>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

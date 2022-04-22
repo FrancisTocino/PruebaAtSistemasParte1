@@ -1,0 +1,114 @@
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main-box {
+  width: 45%;
+  border: 2px solid black;
+  vertical-align: middle;
+  margin: auto;
+  padding: 20px;
+}
+
+#main-box a {
+  font-size: xx-small;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+#main-box #title h1 {
+  font-size: large;
+}
+
+#main-box li {
+  list-style-type: none;
+}
+
+#main-box #filter-by {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#main-box #pills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#main-box .pill {
+  font-size: 12px;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  line-height: 1rem;
+  border-radius: 15px;
+}
+
+#main-box .pill::before {
+  content: '\2716    ';
+}
+
+#main-box .pill:hover {
+  cursor: pointer;
+}
+
+#main-box .header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #ddd1d1;
+  cursor: pointer;
+}
+
+#main-box .header-list h4 {
+  margin: 5px;
+  padding: 5px;
+}
+
+#main-box .list-items {
+  background-color: #d7e2e7;
+  font-size: small;
+  border: 1px solid black;
+}
+
+#main-box .list-items li {
+  padding: 5px;
+}
+
+#main-box button {
+  margin-top: 50px;
+  font-size: 12px;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px;
+  line-height: 1rem;
+  border-radius: 15px;
+  border: 0;
+}
+
+#main-box .animate {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+#main-box .transition {
+  max-height: 999px;
+}
+
+#main-box .signo::after {
+  content: '\2193';
+  transition: content .5s ease-in-out;
+}
+
+#main-box .signoMenos::after {
+  content: '\2191';
+}

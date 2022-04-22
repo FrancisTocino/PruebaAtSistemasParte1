@@ -1,0 +1,116 @@
+html, body{
+    margin:0;border: 0; padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#main-box {
+    width:45%;
+    border: 2px solid black;
+    vertical-align:middle;
+    margin : auto;
+    padding:20px;
+
+    a {
+        font-size:xx-small;
+        font-weight: bold;
+        text-decoration: none;
+        color:red;
+    }
+    #title h1 {
+        font-size: large;
+    }
+    
+    li {
+        list-style-type:none;
+    }
+    #filter-by{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #pills-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+     .pill {
+        font-size: 12px;
+        background-color: cornflowerblue;
+        color:white;
+        padding:5px;
+        margin:5px;
+        line-height: 1rem;
+        border-radius:15px
+     }
+     .pill::before{
+        content:'\2716    ';
+     }
+     .pill:hover {
+         cursor: pointer;
+     }
+
+    .header-list {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        background-color: rgb(221, 209, 209);
+        cursor: pointer;
+        h4{
+            margin:5px;
+            padding:5px;
+        }
+    }
+    .list-items {
+        background-color: rgb(215, 226, 231);
+        font-size: small;
+        border:1px solid black;
+        li {
+            padding:5px;
+        }
+    }
+
+    button {
+        margin-top: 50px;
+        font-size: 12px;
+        background-color: cornflowerblue;
+        color:white;
+        padding:10px;
+        line-height: 1rem;
+        border-radius:15px;
+        border:0;
+    }
+
+
+    .animate {
+        max-height: 0;
+        overflow:hidden;
+      
+        
+        -webkit-transition: max-height .5s ease-in-out;
+        -moz-transition: max-height .5s ease-in-out;
+        -ms-transition: max-height .5s ease-in-out;
+        -o-transition: max-height .5s ease-in-out;
+        transition: max-height .5s ease-in-out;
+    }
+    
+    .transition {
+        max-height: 999px;
+    }
+
+
+    .signo::after {
+        content: '\2193';
+        -webkit-transition: content .5s ease-in-out;
+        -moz-transition: content .5s ease-in-out;
+        -ms-transition: content .5s ease-in-out;
+        -o-transition: content .5s ease-in-out;
+        transition: content .5s ease-in-out;
+
+    }
+
+    .signoMenos::after{
+        content: '\2191';
+    }
+}
